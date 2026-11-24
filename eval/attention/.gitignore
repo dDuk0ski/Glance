@@ -1,0 +1,8 @@
+.venv/
+raw/
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+.ipynb_checkpoints/
