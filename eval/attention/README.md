@@ -14,10 +14,23 @@ The trained model is exported as `attention_model.json` and loaded by the app. N
 
 ## Setup
 
+features_mp.py requires an older version of mediapipe, while train.py needs the newer numpy, to solve this, run two
+terminals in venv.
+
+### Train venv
 ```bash
 cd eval/attention
-python3.12 -m venv .venv && source .venv/bin/activate
+python3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+```
+
+### features_mp venv
+```bash
+cd eval/attention
+python3.12 -m venv .venv #Not needed if .venv was created and saved in your files
+.\.venv\Scripts\Activate.ps1
+pip install "mediapipe==0.10.21"
 ```
 
 On macOS, the first webcam capture asks for camera permission for Terminal / VS Code. Allow it, or capture fails silently.

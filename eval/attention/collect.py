@@ -1,4 +1,13 @@
-#python collect.py --person <name> --session <session_number> --laptop <computer_name> --width 640 --height 480 --exposure -6
+"""Before running the full script, run the following command to check the fps
+
+"python collect.py --check-camera --width 640 --height 480"
+
+If the fps is too low, add in "--exposure -5" or "--exposure -6" to the command above. Also be sure you are in a bright area.
+
+use the command below to run this file, add in your name, session number, and computer name. If the testing before showed the fps is too low,
+be sure to add "--exposure #" as well.
+
+python collect.py --person <name> --session <session_number> --laptop <computer_name> --width 640 --height 480"""
 
 import argparse
 import csv
